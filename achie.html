@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("backg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            padding: 50px 5%;
+        }
+
+        .container {
+            position: relative;
+            height: 900;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 30px;
+            background: rgba(243, 232, 232, 0.08);
+            backdrop-filter: blur(7px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            transform: scale(0);
+            animation: zoom-in 1s ease forwards;
+        }
+
+        @keyframes zoom-in {
+            100% { transform: scale(1); }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 550;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #eb3333;
+        }
+
+        .contact-btn {
+            background: #2d8feb;
+            padding: 8px 18px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #eff1f3;
+            margin: 40px 0;
+            font-size: 38px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            position: relative;
+            width: 260px;
+            height: 300px;
+            border-radius: 20px;
+            overflow: visible;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .card1 { transform: rotate(-10deg); }
+        .card2 { transform: rotate(0deg); }
+        .card3 { transform: rotate(10deg); }
+
+        .card:hover { transform: scale(1.05); }
+
+        .info {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -120px;
+            width: 240px;
+            background:rgba(73, 73, 73, 0.3);
+            color: rgb(243, 239, 239);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .card:hover .info {
+            opacity: 1;
+            bottom: -140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">NetSite</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="abo.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact1.html" class="contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Experience the Thrill of Tennis</h1>
+
+        <div class="image-row">
+            <div class="card card1">
+                <img src="achie1.jpg" alt="Medals">
+                <div class="info">
+                    <h3>Medals</h3>
+                    <p>Awarded medals and recognition in academics, Arnis, sports, dance, 
+                        and creative projects, showcasing skill and dedication.</p>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <img src="achie3.jpg" alt="Tennis Team">
+                <div class="info">
+                    <h3>Final Defense</h3>
+                    <p>Successfully completed our final defense, demonstrating teamwork,
+                        preparation, and dedication.</p>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <img src="achie2.jpg" alt="Awards">
+                <div class="info">
+                    <h3>Tropies and Certificates</h3>
+                    <p>Earned trophies and certificates in academics, Arnis, sports, and competitions
+                        , recognizing outstanding performance, skill, and dedication.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

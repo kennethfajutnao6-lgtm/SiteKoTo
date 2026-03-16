@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background-image:url("backg.png");
+color:white;
+background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center ;
+      min-height: 100vh;
+      padding: 50px 5%;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 80px;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ff5757;
+transform:scale(1.1);
+}
+
+.contact-btn{
+background:#2d8feb;
+padding:8px 18px;
+border-radius:20px;
+}
+
+header{
+text-align:center;
+padding:60px 20px;
+animation:fadeIn 2s ease;
+}
+
+header h1{
+font-size:45px;
+}
+
+.profile{
+text-align:center;
+margin-top:20px;
+}
+
+.slider{
+width:270px;
+height:270px;
+border-radius:50%;
+overflow:hidden;
+margin:auto;
+box-shadow:0 5px 20px rgba(0,255,255,0.5);
+object-fit: cover;
+}
+
+.slides{
+display:flex;
+width:300%;
+height:100%;
+animation:slide 8s infinite;
+}
+
+.slides img{
+width:100%;
+object-fit:cover;
+}
+
+.container{
+width:80%;
+margin:auto;
+}
+
+section{
+background:rgba(255,255,255,0.1);
+border: 2px solid rgba(255, 255, 255, 0.3);
+padding:30px;
+margin:50px auto;
+border-radius:30px;
+backdrop-filter: blur(7px);
+
+transform:translateY(40px);
+opacity:0;
+animation:slideUp 1.2s forwards;
+}
+
+section:nth-child(2){animation-delay:.4s;}
+section:nth-child(3){animation-delay:.8s;}
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.card{
+flex:1;
+min-width:200px;
+background:rgba(7, 7, 7, 0.3);
+padding:20px;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.08);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.3);
+margin-top:40px;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes slideUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes slide{
+0%{margin-left:0;}
+33%{margin-left:0;}
+
+35%{margin-left:-100%;}
+66%{margin-left:-100%;}
+
+68%{margin-left:-200%;}
+100%{margin-left:-200%;}
+}
+
+</style>
+</head>
+
+<body>
+<section>
+<nav>
+
+<div class="logo">NetSite</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="achie.html">Achievements</a></li>
+<li><a href="contact1.html" class="contact-btn">Contact</a></li>
+</ul>
+
+</nav>
+
+<header>
+
+<h1>About Me</h1>
+
+<div class="profile">
+
+<div class="slider">
+<div class="slides">
+<img src="abo1.jpg">
+<img src="ken.jpg">
+<img src="abo2.jpg">
+</div>
+</div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+
+
+<h2>Introduction</h2>
+
+<p>
+Hello! My name is Kenneth Bayonbon Fajutnao. I was born on June 2, 2009, and I am 16 years old. I 
+live in AFP/PNP Batia, Bocaue, Bulacan. I am 5'5" tall and weigh 51 kg.
+</p>
+
+</section>
+
+<section>
+
+<h2>Goal</h2>
+
+<p>
+My goal is to become a professional teacher, professional arnis player and 
+successful person because i want to share a knowledge and blessing to others.
+</p>
+
+</section>
+
+<section>
+
+<h2>Hobbies & Interests</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Arnis </h3>
+<p>I like to play arnis because this is where I learned how 
+    to defend myself</p>
+</div>
+
+<div class="card">
+<h3>🎮 Gaming</h3>
+<p>Playing games helps me relax and happy when i feel sad .</p>
+</div>
+
+<div class="card">
+<h3>🎵 Music</h3>
+<p>I like listening to music while coding and when i'm just
+    chilling .</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>

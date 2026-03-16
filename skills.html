@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Skills Portfolio</title>
+
+<style>
+body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("backg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            padding: 50px 5%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 100%;
+    padding: 25px 5%;
+    background: #115ed3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 80px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#ebedf1;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    gap:30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#ebe1e1;
+    font-weight:550;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ee3434;
+}
+
+.contact-btn{
+    background:#2d8feb;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+
+.container {
+            position: relative;
+            height: 650px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 30px;
+            background: rgba(243, 232, 232, 0.08);
+            backdrop-filter: blur(7px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            transform : scale(0);
+            animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in {
+    100%{ transform: scale(1);}
+}
+
+h1{
+    text-align:center;
+    color:#eff1f3;
+    margin-bottom:40px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:rgba(7, 7, 7, 0.3);
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+    box-shadow:0 3px 10px rgba(5, 5, 5, 0.1);
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.skill-card h3{
+    color:#f4f7f4;
+}
+
+.skill-card p{
+    font-size:14px;
+    line-height:1.6;
+    color:#f8f6f6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<header>
+     <nav>
+        <div class="logo">NetSite</div>
+        <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="abo.html">About</a></li>
+    <li><a href="achie.html">Achievements</a></li>
+    <li><a href="contact1.html" class="contact-btn">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+    <h1>My Skills</h1>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Coding</h3>
+            <p>
+I enjoy coding and creating simple programs or websites. It allows me 
+to solve problems and build useful digital projects.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Volleyball</h3>
+            <p>
+                Volleyball helps me stay active and improve teamwork. It 
+                also teaches discipline, coordination, and communication with teammates.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Video Editing</h3>
+            <p>
+               I like editing videos to create creative content. 
+               I enjoy arranging clips, adding effects, and making videos more interesting to watch.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Basketball</h3>
+            <p>
+                Playing basketball helps me develop strategy, and physical fitness. 
+                It also improves my focus and quick decision-making during games.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Arnis</h3>
+            <p>
+               Arnis teaches me self-defense, discipline, and control. It helps 
+               improve my reflexes, coordination, and respect for martial arts.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Dancing</h3>
+            <p>
+                Dancing allows me to express myself through movement and creativity. 
+                It also helps me build confidence and stay physically active.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Drawing</h3>
+            <p>
+               Drawing helps me express my ideas and imagination through art.
+               I enjoy drawing and creating sketches.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Writing</h3>
+            <p>
+               Writing allows me to share my thoughts, and ideas.
+                It helps improve my communication and creativity.
+            </p>
+        </div>
+    
+    </div>
+</div>
+
+
+</body>
+</html>
